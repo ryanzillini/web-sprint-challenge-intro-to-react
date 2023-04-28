@@ -3,7 +3,7 @@ import React from "react";
 export default function CharacterInfo({ charData }) {
   //   console.log(charData);
   return (
-    <div className="characters-info">
+    <div className="character-info">
       <p>Height: {charData.height}</p>
       <p>Gender: {charData.gender}</p>
       <p>Mass: {charData.mass}</p>

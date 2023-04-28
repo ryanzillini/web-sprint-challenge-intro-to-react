@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import Character from "./components/Character";
-import CharacterInfo from "./components/CharacterInfo";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -27,9 +26,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React War</h1>
-      <ul>
+      <ul className="character-container">
         {charData.map((char) => {
-          return <Character charData={char} />;
+          return <Character charData={char} key={char.id} />;
         })}
       </ul>
     </div>
